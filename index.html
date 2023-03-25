@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>CommentSystem</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="any_title_block"></div>
+        <div class="main_block">
+          <div class="any_nav_block"></div>
+          <div class="content_block">
+            <div class="any_information_block">
+              <div class="mini_information_blocks">
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+                <div class="item_mini_information_block"></div>
+              </div>
+              <div class="big_information_block"></div>
+            </div>
+            <div class="comments_block">
+              <div class="comment_options">
+                <div class="comment_score">
+                  Комментарии
+                  <span class="comment_counter">(0)</span>
+                </div>
+                <select class="comment_sort">
+                  <option class="comment_sort_item">По дате</option>
+                  <option class="comment_sort_item">По количеству оценок</option>
+                  <option class="comment_sort_item">По актуальности</option>
+                  <option class="comment_sort_item">По количеству ответов</option>
+                </select>
+                <div class="favorites_comments">
+                  Избранное
+                  <img src="">
+                </div>
+              </div>
+              <div class="new_comment">
+                <div class="new_comment_user_avatar">
+                  <img src="" alt="">
+                </div>
+                <form class="comment_form">
+                  <div class="user_name_and_counter">
+                    <div class="user_name">Максим Авдеенко</div>
+                    <div class="symbol_counter_default active">Макс. 1000 символов</div>
+                    <div class="symbol_counter_dinamic"></div>
+                    <div class="symbol_counter_error"></div>
+                    <div class="error_message">Слишком длинное сообщение</div>
+                  </div>
+                  <textarea id="commentContent" class="input_message" placeholder="Введите текст сообщения..."></textarea>
+                  <button class="comment_button" type="submit" disabled>Отправить</button>
+                </form>
+              </div>
+              <div class="comment">
+                <div class="comment_user_avatar">
+                  <img src="" alt="">
+                </div>
+                <div class="comment_content">
+                  <div class="user_name_and_date">
+                    <div class="user_name">Алексей_1994b</div>
+                    <div class="comment_content_date">15.01 13:55</div>
+                  </div>
+                  <div class="comment_content_text_content">
+                    Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, 
+                    стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах 
+                    с минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, 
+                    однако вместо этого 'Кольца власти' просто позаимствовали имена из оригинала, 
+                    куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.
+                  </div>
+                  <div class="comment_content_options">
+                    <div class="answer_button">
+                      <img src="" alt="">
+                      <div class="answer_text">Ответить</div>
+                    </div>
+                    <div class="favorites_block">
+                      <img src="" alt="">
+                      <div class="in_favorites">В избранном</div>
+                      <div class="to_favorites active">В избранное</div>
+                    </div>
+                    <div class="ratio_block">
+                      <button id="ratio_button-">
+                        <img src="./images/ratio_button-.svg" alt="minus">
+                      </button>
+                      <div id="ratio_counter" class="ratio_counter"></div>
+                      <button id="ratio_button+">
+                        <img src="./images/ratio_button+.svg" alt="plus">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./Comment.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
